@@ -21,6 +21,11 @@ public class Easypetrinet {
         int p3 = 1;
         int p4 = 0;
         int p5 = 1;
+        boolean t1 = true;
+        boolean t2 = false;
+        boolean t3 = true;
+        boolean t4 = true;
+        boolean t5 = false;
     }
     
 }
