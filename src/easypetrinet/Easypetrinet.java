@@ -5,7 +5,7 @@
  */
 package easypetrinet;
 
-/**
+/** hola
  *
  * @author asgardius
  */
