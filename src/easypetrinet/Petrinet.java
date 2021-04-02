@@ -68,12 +68,13 @@ public class Petrinet {
             }            
         }
         
-        /*
-        //muestra el arreglo
+        //muestra el arreglo de transitores disponibles
+        System.out.print("Transitor disponible: ");
         for (int i = 0; i < número_disponibles; i++) {
-            System.out.println("Disponibles: "+ transitores_disponibles.get(i));            
+            System.out.print(transitores_disponibles.get(i)+" ");            
         }
-        */        
+        System.out.println("");
+               
         
         //Si hay más de una transición disponible se elige al azar
         if (número_disponibles > 1) {
@@ -85,7 +86,7 @@ public class Petrinet {
         }else{
             transitor_activo = posible_transitor;
         }          
-        System.out.println("transitor activo: "+transitor_activo);
+        System.out.println("Transitor activo: "+transitor_activo);
         return transitor_activo;
     }
     
@@ -96,10 +97,10 @@ public class Petrinet {
        //Se crea un token en p2
        places_tokens[1][1] = places_tokens[1][1]+1;
        //imprimir estado de tokens
+        System.out.println("Place     Tokens");
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 2; j++) {
-                System.out.print(+places_tokens[i][j]);
-            }
+            System.out.print("  " + places_tokens[i][0] + "     ");
+            System.out.print("     " + places_tokens[i][1]);
             System.out.println("");
         }
        return places_tokens;
@@ -112,12 +113,12 @@ public class Petrinet {
        places_tokens[2][1] = places_tokens[2][1]+1;
        places_tokens[0][1] = places_tokens[0][1]+1;
        //imprimir estado de tokens
+        System.out.println("Place     Tokens");
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 2; j++) {
-                System.out.print(+places_tokens[i][j]);
-            }
+            System.out.print("  " + places_tokens[i][0] + "     ");
+            System.out.print("     " + places_tokens[i][1]);
             System.out.println("");
-        }
+        }       
        return places_tokens;
        
     }
@@ -128,12 +129,12 @@ public class Petrinet {
        // Se crea un token en p4
        places_tokens[3][1] = places_tokens[3][1]+1;
        //imprimir estado de tokens
+        System.out.println("Place     Tokens");
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 2; j++) {
-                System.out.print(+places_tokens[i][j]);
-            }
+            System.out.print("  " + places_tokens[i][0] + "     ");
+            System.out.print("     " + places_tokens[i][1]);
             System.out.println("");
-        }    
+        }   
        return places_tokens;
     }
     
@@ -144,12 +145,12 @@ public class Petrinet {
        // Se crea un token en p4
        places_tokens[3][1] = places_tokens[3][1]+1;
        //imprimir estado de tokens
+        System.out.println("Place     Tokens");
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 2; j++) {
-                System.out.print(+places_tokens[i][j]);
-            }
+            System.out.print("  " + places_tokens[i][0] + "     ");
+            System.out.print("     " + places_tokens[i][1]);
             System.out.println("");
-        }       
+        }     
        return places_tokens;
     }
     
@@ -160,12 +161,12 @@ public class Petrinet {
        places_tokens[0][1] = places_tokens[0][1]+1;
        places_tokens[4][1] = places_tokens[4][1]+1;
        //imprimir estado de tokens
+        System.out.println("Place     Tokens");
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 2; j++) {
-                System.out.print(+places_tokens[i][j]);
-            }
+            System.out.print("  " + places_tokens[i][0] + "     ");
+            System.out.print("     " + places_tokens[i][1]);
             System.out.println("");
-        }      
+        }     
        return places_tokens;
     }    
 }
